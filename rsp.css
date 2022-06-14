@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.rsp-bg-container {
+    background-color: red;
+    background-size: cover;
+    height: 103vh;
+}
+
+.rsp-heading {
+    font-family: Open Sans-Serif;
+    font-size: 50px;
+    text-align: center;
+    color: cyan;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.game-poster {
+    height: 200px;
+    width: 500px;
+    width: 100vw;
+}
+
+.pvsc {
+    color: white;
+    font-size: 25px;
+}
+
+.op-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border-style: solid;
+}
+
+.result {
+    color: lightgreen;
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 25px;
+    order: 2;
+}
+
+.me {
+    font-family: roboto;
+    color: white;
+    font-size: 10px;
+    background-color: purple;
+}
+
+.vs {
+    font-family: Open Sans-Serif;
+    color: blue;
+    font-size: 24px;
+    font-weight: bold;
+}

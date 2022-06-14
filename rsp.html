@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="rsp.css">
+
+</head>
+
+<body>
+    <div>
+        <div class="row">
+            <div id="rspMainContainer" class="col-12 rsp-bg-container text-center">
+                <h1 class="rsp-heading mt-3">Rock Scissor Paper Game</h1>
+                <div>
+                    <img src="https://res.cloudinary.com/df2kcpkgv/image/upload/v1654036509/RPS_io5ia4.png" class="game-poster mt-4 mb-3" />
+                </div>
+                <h1 class="pvsc">Player V/S Computer</h1>
+                <div id="buttonContainer" class="mt-3">
+                    <button onclick="onChooseRock()" id="rockButton" class="btn btn-primary mr-3">Rock</button>
+                    <button onclick="onChoosePaper()" id="paperButton" class="btn btn-primary mr-3">Paper</button>
+                    <button onclick="onChooseScissor()" id="scissorButton" class="btn btn-primary">Scissor</button>
+                </div>
+                <div>
+                    <button onclick="onGo()" id="goButton" class="btn btn-primary mt-3">GO</button>
+                    <button onclick="onReset()" id="resetButton" class="btn btn-primary mt-3">Reset</button>
+                </div>
+
+                <div id="resultImgContainer" class=" d-flex flex-row justify-content-center mt-4">
+                    <img src="https://res.cloudinary.com/df2kcpkgv/image/upload/v1654036509/rock_lqqgym.jpg" id="rockImg" class="op-img" />
+                    <img src="https://res.cloudinary.com/df2kcpkgv/image/upload/v1654036508/paper_vtgrpx.png" id="paperImg" class="op-img " />
+                    <img src="https://res.cloudinary.com/df2kcpkgv/image/upload/v1654036508/scissor_u4bvbp.png" id="scissorImg" class="op-img" />
+                </div>
+
+                <div id="res2Container" class="d-none flex-row justify-content-center mt-4">
+                    <img src="" id="user" class="op-img mr-3" />
+                    <span class="vs">V/S</span>
+                    <img src="" id="comp" class="op-img ml-3" />
+                </div>
+                <div class="d-none mt-3" id="spinner">
+                    <div class="d-flex flex-row justify-content-center">
+                        <div class="spinner-border" role="status"></div>
+                    </div>
+                </div>
+                <p id="result" class="result mt-3 mb-3">Choose One !!!</p>
+
+                <p class="me fixed-bottom mb-0"> © Made by Subham Panda</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="rsp.js"></script>
+</body>
+
+</html>
